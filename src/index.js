@@ -17,7 +17,7 @@ export default function(options = {}) {
             let transformed = convert(code, options.converter);
             if (options.rewire) {
                 transformed = transformed.replace(importStatement, (match, begin, moduleId, end) => {
-                    return `${begin}${options.rewire(moduleId, id) || moduleId}${end}`;
+                    return `${begin}${options.rewire(moduleId, id).split('\\').join('\\\\') || moduleId}${end}`;
                 });
             }
 
