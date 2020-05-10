@@ -6,7 +6,7 @@ var convert = _interopDefault(require('@buxlabs/amd-to-es6'));
 var rollupPluginutils = require('rollup-pluginutils');
 var os = _interopDefault(require('os'));
 
-var isWindows = os.platform === 'win32';
+var isWindows = os.platform() === 'win32';
 
 var firstpass = /\b(?:define)\b/;
 var importStatement = /\b(import .*['"])(.*)(['"].*\n)/g;

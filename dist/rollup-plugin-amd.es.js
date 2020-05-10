@@ -2,7 +2,7 @@ import convert from '@buxlabs/amd-to-es6';
 import { createFilter } from 'rollup-pluginutils';
 import os from 'os';
 
-var isWindows = os.platform === 'win32';
+var isWindows = os.platform() === 'win32';
 
 var firstpass = /\b(?:define)\b/;
 var importStatement = /\b(import .*['"])(.*)(['"].*\n)/g;
