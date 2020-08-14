@@ -6,7 +6,7 @@
   "module": "dist/rollup-plugin-amd.es.js",
   "jsnext:main": "dist/rollup-plugin-amd.es.js",
   "dependencies": {
-    "@buxlabs/amd-to-es6": "^0.13.3",
+    "@buxlabs/amd-to-es6": "^0.15.2",
     "rollup-pluginutils": "^2.3.3"
   },
   "repository": {
